@@ -1,0 +1,5 @@
+<div class="container dark">
+  <p>{{ item() | itemTransform }}</p>
+  <app-action [name]="'Change item name'" (action)=onChangeName()></app-action>
+  <app-action [name]="'Change item price'" (action)=onChangePrice()></app-action>
+</div>

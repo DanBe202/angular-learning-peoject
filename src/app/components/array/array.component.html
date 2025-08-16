@@ -1,0 +1,12 @@
+<div class="">
+  <div style="
+  display: flex;
+  gap: 12px">
+    <button (click)="popValue()">Pop value from Fibonacci</button>
+    <app-action [name]="'Add values'" (action)="onAction()"></app-action>
+  </div>
+  <p>Linear array:</p>
+  <p class="wrapper">{{ inputArray().join(', ') }}</p>
+  <p>Fibonacci array:</p>
+  <p class="wrapper">{{ modelArray().join(', ') }}</p>
+</div>

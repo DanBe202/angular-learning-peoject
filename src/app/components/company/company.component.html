@@ -1,0 +1,7 @@
+<div class="container">
+  <app-item-actions (createItem)="addItem($event.name, $event.price)"></app-item-actions>
+  @for (item of this.getItems(); track item.id) {
+    <app-item [item]="item" (onChangeItem)="changeItem($event.item, $event.option)"></app-item>
+  }
+</div>
+

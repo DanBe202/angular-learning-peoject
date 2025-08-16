@@ -1,0 +1,6 @@
+<div class="">
+  <input type="text" placeholder="Name" [(ngModel)]="name">
+  <input type="number" placeholder="Value" [(ngModel)]="price">
+  <app-action (action)="createAction()" [name]="'Add item'"></app-action>
+</div>
+
