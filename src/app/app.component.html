@@ -1,0 +1,13 @@
+<div class="app">
+  <router-outlet/>
+  <div class=" app-arrays">
+    <div class="arrays-box container">
+      <p class="wrapper">{{ firstArray().join(', ') }}</p>
+      <p>Array length is {{ length() | json }}</p>
+    </div>
+    <app-array class="arrays-box container"
+               [inputArray]="firstArray()"
+               [(modelArray)]="secondArray"
+               (action)="changeValue()"></app-array>
+  </div>
+</div>
