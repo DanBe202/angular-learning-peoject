@@ -1,6 +1,6 @@
-<div class="">
-  <input type="text" placeholder="Name" [(ngModel)]="name">
-  <input type="number" placeholder="Value" [(ngModel)]="price">
+<div class="flex gap-4 justify-center">
+  <input type="text" placeholder="Name" class="input input-neutral" [(ngModel)]="name">
+  <input type="number" placeholder="Value" class="input input-neutral" [(ngModel)]="price">
   <app-action (action)="createAction()" [name]="'Add item'"></app-action>
 </div>
 

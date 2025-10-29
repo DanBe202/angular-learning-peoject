@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
-import {ItemComponent} from '../item/item.component';
-import {ItemActionsComponent} from '../item-actions.component/item-actions.component';
+import {ItemComponent} from '../../components/item/item.component';
+import {ItemActionsComponent} from '../../components/item-actions.component/item-actions.component';
 import {CompanyService} from './company.service';
 import {Item} from '../../types/item.type';
 

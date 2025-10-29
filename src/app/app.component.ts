@@ -1,15 +1,17 @@
 import {ChangeDetectionStrategy, Component, computed, signal} from '@angular/core';
 import {ArrayComponent} from './components/array/array.component';
-import {JsonPipe} from '@angular/common';
 import {RouterOutlet} from '@angular/router';
+import {CardComponent} from './components/card/card.component';
+import {JsonPipe} from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   imports: [
     ArrayComponent,
-    JsonPipe,
     RouterOutlet,
+    CardComponent,
+    JsonPipe,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

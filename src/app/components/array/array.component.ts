@@ -1,9 +1,10 @@
 import {ChangeDetectionStrategy, Component, input, model, output} from '@angular/core';
 import {ButtonComponent} from '../button/button.component';
+import {CardComponent} from '../card/card.component';
 
 @Component({
   selector: 'app-array',
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, CardComponent],
   templateUrl: './array.component.html',
   styleUrl: './array.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush

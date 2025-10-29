@@ -1,32 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-  margin: 0;
-  padding: 0;
-  background: #EDEDE9;
-}
+@import "tailwindcss";
 
-
-.container {
-  margin: 1rem;
-  padding: 1rem;
-  background: #FFFFFF;
-  border-radius: 32px;
-}
-
-.container.dark {
-  background: #F5EBE0;
-}
-
-.arrays-box {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.wrapper {
-  max-width: 100%;
-  overflow-wrap: break-word;
-  white-space: normal;
-  line-height: 1.5;
+@plugin "daisyui" {
+  themes: dark --default;
 }
 
