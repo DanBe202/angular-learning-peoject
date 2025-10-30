@@ -1,16 +1,14 @@
 <div>
   <div class="navbar bg-neutral text-neutral-content">
     <button class="btn btn-ghost text-xl">daisyUI</button>
+    <button routerLink="/arrays" class="btn btn-ghost text-xl">Arrays</button>
+    <button routerLink="/items" class="btn btn-ghost text-xl">Items</button>
+    <button routerLink="/timer" class="btn btn-ghost text-xl">Timer</button>
   </div>
 
   <div class="container mx-auto p-4 m-2">
     <router-outlet/>
 
-    <app-card [data]="firstArray().join(', ')" title="Array length is: {{ length() | json }}"></app-card>
-    <app-array class="flex flex-col m-1 p-1 rounded-4xl"
-               [inputArray]="firstArray()"
-               [(modelArray)]="secondArray"
-               (action)="changeValue()"></app-array>
   </div>
 </div>
 

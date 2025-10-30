@@ -1,0 +1,13 @@
+<div class="flex flex-col items-center gap-4">
+  <div class="flex gap-4">
+    <h1>Timer:</h1>
+    <p>{{ timerValue() }}</p>
+  </div>
+  <div class="flex gap-4">
+    <button (click)="startTimer()" class="btn btn-primary" [disabled]="buttonDisabled()">Start</button>
+    <button (click)="stopTimer()" class="btn btn-primary" [disabled]="!buttonDisabled()">Stop</button>
+    <button (click)="restartTimer()" class="btn btn-primary" [disabled]="! timerStarted()">Stop</button>
+  </div>
+</div>
+
+

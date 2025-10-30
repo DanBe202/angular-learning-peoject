@@ -1,12 +1,16 @@
 import {Routes} from '@angular/router';
-import {CompanyComponent} from './components/company/company.component';
-import {NotFoundComponent} from './components/not-found.compoonent/not-found.component';
-import {Home} from './components/home/home.component';
+import {Company} from './features/company/company';
+import {NotFound} from './features/not-found/not-found';
+import {Home} from './features/home/home';
+import {Timer} from './features/timer/timer';
+import {Arrays} from './features/arrays/arrays';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: Home},
-  {path: 'items', component: CompanyComponent},
-  {path: '**', component: NotFoundComponent}
+  {path: 'arrays', component: Arrays},
+  {path: 'items', component: Company},
+  {path: 'timer', component: Timer},
+  {path: '**', component: NotFound},
 ]
 export default appRoutes;

@@ -1,0 +1,6 @@
+<app-card [data]="firstArray().join(', ')" title="Array length is: {{ length() | json }}"></app-card>
+<app-array class="flex flex-col m-1 p-1 rounded-4xl"
+           [inputArray]="firstArray()"
+           [(modelArray)]="secondArray"
+           (action)="changeValue()">
+</app-array>

@@ -7,11 +7,11 @@ import {Item} from '../../types/item.type';
 @Component({
   selector: 'app-company',
   imports: [ItemComponent, ItemActionsComponent],
-  templateUrl: './company.component.html',
-  styleUrl: './company.component.css',
+  templateUrl: './company.html',
+  styleUrl: './company.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CompanyComponent {
+export class Company {
   private companyService = inject(CompanyService);
 
 
